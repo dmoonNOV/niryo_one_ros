@@ -1,9 +1,6 @@
 <launch>
     <arg name="simulation_mode" default="false" />
 
-    <!-- Moveit move_group -->
-    <include file="$(find niryo_one_moveit_config)/launch/move_group.launch" />
-    
     <!-- Disable Moveit! controller timeout -->
     <param name="move_group/trajectory_execution/execution_duration_monitoring" value="false" />
     
